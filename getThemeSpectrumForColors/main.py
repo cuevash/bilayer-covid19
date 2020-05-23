@@ -48,7 +48,7 @@ def fullSpectrumForPrimaryColorsTable(dataset):
         columns=['ColorID', 'ColorHex'] + list(map(lambda ratio: "Lighten_" + str(ratio), ratios)) + list(map(lambda ratio: "Darken_" + str(ratio), ratios)))
 
 
-def get_theme_spectrum_for_colors(request):
+def getThemeSpectrumForColors(request):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
